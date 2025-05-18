@@ -1,0 +1,52 @@
+---
+layout: default_style
+permalink: /en/contact
+lang: en
+published: true
+---
+
+<div class="container-fluid-kamn">
+  <div class="row">
+    <div>
+      <iframe width="100%" height="450px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="{{ site.google_map }}"></iframe>
+      <br />
+    </div>
+    <div class="container">
+      <div class="col-lg-4">
+        <h4>Find us at:</h4>
+
+        <p class="block-author">{{ site.company_name }}</p>
+        <p>{{ site.address_line }}</p>
+        <p>Opening Hours: Monday to Saturday from 10 AM to 8 PM</p>
+        <p>Phone: {{ site.telephone_number }}</p>
+
+        <em class="block-author">Email: {{ site.company_email }}</em><br><br>
+      </div>
+      <div class="col-lg-8">
+        <div class="feedback-form">
+
+          <div id="contact-response"></div>
+
+          <form action="https://formspree.io/f/xqknyqgk" method="POST" id="contact-form">
+            <fieldset>
+              <div class="form-group form-group-fullname">
+                <label class="control-label" for="fullname">NAME *</label>
+                <input type="text" class="form-control" name="fullname" id="fullname" placeholder="Enter your Name" required>
+              </div>
+              <div class="form-group form-group-email">
+                <label class="control-label" for="email">E-MAIL *</label>
+                <input type="email" class="form-control" name="email" id="email" placeholder="Enter your E-Mail" required>
+              </div>
+              <div class="form-group form-group-message">
+                <label class="control-label" for="message">MESSAGE *</label>
+                <textarea class="form-control" name="message" id="message" rows="3" required></textarea>
+              </div>           
+              <button type="submit" class="btn btn-primary">Send</button>
+            </fieldset>
+          </form>
+
+        </div> 
+      </div>
+    </div>
+  </div>
+</div>    

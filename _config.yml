@@ -51,3 +51,8 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+languages: ["es", "en"]
+default_lang: "es"
+
+exclude_from_localizations: ["assets", "images", "js", "css"]

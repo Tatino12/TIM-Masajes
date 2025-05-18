@@ -2,12 +2,18 @@
 <html lang="en">
 
   {% include head.html %}
-  {% include header.html %}
-  {% include script.html %}
 
   <body>
+    {% if page.lang == "en" %}
+      {% include en/header.html %}
+    {% else %}
+      {% include header.html %}
+    {% endif %}
+
     {{ content }}
+
+    {% include script.html %}
+    {% include footer.html %}
   </body>
 
-  {% include footer.html %}
 </html>
