@@ -17,8 +17,8 @@ title: Terapia Integral de Masajes
 email: sallyramirez14@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Terapia Integral de Masajes, una garantia de bienestar físico y emocional.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/TIM-Masajes"
+url: "https://tatino12.github.io"
 
 # Company Information
 company_name: TIM Masajes
