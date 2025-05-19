@@ -1,7 +1,4 @@
----
-layout: default_style
-lang: es
----
+
 
 
 <!-- Footer -->
@@ -12,10 +9,16 @@ lang: es
       <div class="col-md-4">
         <h3><i class="fa fa-map-marker"></i> Contacto:</h3>
         <p class="footer-contact">
-          {{ site.company_name }} <br>
-          Horario: Lunes a Sábados de 10 a 20 hs. <br> 
-          Celular: {{ site.telephone_number }} <br>
-          E-mail: {{ site.company_email }}<br>
+         
+          <div style="background-color: #f5f5f5; padding: 15px 20px; border-radius: 10px; color: #333; font-size: 16px;">
+            <ul style="list-style: none; padding: 0; margin: 0;">
+              <li style="margin-bottom: 6px;">  <strong> {{ site.company_name }}</strong> </li>
+              <li style="margin-bottom: 6px;"><strong>Horario de atención:</strong> lunes a sábados, de 10:00 a 21:00 hs (incluye feriados).</li>
+              <li style="margin-bottom: 6px;"><strong>Celular:</strong> {{ site.telephone_number }}</li>
+              <li><strong>Dirección:</strong> Ayacucho 1250, Recoleta, Ciudad Autónoma de Buenos Aires.</li>
+            </ul>
+          </div>
+
         </p>
       </div>
       <div class="col-md-4">
@@ -27,18 +30,18 @@ lang: es
          <p><a href="/team"> Team ( Meet the Team )</a></p>  -->
       </div>
       <div class="col-md-4">
-        <h3><i class="fa fa-heart"></i> Redes Sociales</h3>
+        <h3><i class="fa fa-globe"></i> Redes Sociales</h3>
         <div id="social-icons">
 
           {% if site.facebook_link %}
             <a href="{{ site.facebook_link }}" class="btn-group facebook" style="display: inline-block;" >
-              <i class="fa fa-facebook"></i>
+              <i class="fab fa-facebook"></i>
              </a>
           {% endif %}
 
           {% if site.instagram_link %}
              <a href="{{ site.instagram_link }}" class="btn-group instagram" style="display: inline-block;">
-               <i class="fa fa-instagram"></i>
+               <i class="fab fa-instagram"></i>
              </a> 
           {% endif %}
 

@@ -14,6 +14,65 @@
 
     {% include script.html %}
     {% include footer.html %}
+
+    
+      <!-- Botón de WhatsApp flotante -->
+<a href="https://wa.me/5491123802901" class="float" target="_blank">
+  <img src="../assets/ico/icons8-whatsapp-48.png" width="48" height="48" alt="WhatsApp Logo" class="whatsapp-logo"/>
+  <span class="whatsapp-text">Reserva tu turno</span>
+  </a>
+
+
+
+  <!-- Botón para subir fijo a la izquierda -->
+<button onclick="topFunction()" id="btnUp" title="Ir arriba">⬆️</button>
+
+<style>
+  #btnUp {
+    position: fixed;
+    bottom: 40px;
+    left: 20px;
+    z-index: 1000;
+    border: none;
+    outline: none;
+    background-color: #f6c5cf;
+    color: white;
+    cursor: pointer;
+    padding: 12px 16px;
+    border-radius: 50%;
+    font-size: 22px;
+    box-shadow: 2px 2px 7px rgba(0,0,0,0.3);
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+    opacity: 0;              /* oculto inicialmente */
+    pointer-events: none;    /* no interactúa mientras está oculto */
+  }
+  #btnUp:hover {
+    background-color: #f6c5cf;
+  }
+  #btnUp.show {
+    opacity: 1;             /* visible */
+    pointer-events: auto;   /* sí interactúa */
+  }
+</style>
+
+<script>
+  // Mostrar botón cuando se baja 100px
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    const btn = document.getElementById("btnUp");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+      btn.classList.add("show");
+    } else {
+      btn.classList.remove("show");
+    }
+  }
+
+  function topFunction() {
+    window.scrollTo({top: 0, behavior: 'smooth'});
+  }
+</script>
+
   </body>
 
 </html>

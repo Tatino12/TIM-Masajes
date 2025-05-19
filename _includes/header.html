@@ -33,20 +33,7 @@
     </ul>         
   </div>
   </div>
- 
-  <ul class="lang-switch">
-    {% if page.url contains '/en/' %}
-      <!-- En versión inglés, link a español -->
-      {% assign spanish_url = page.url | remove: '/en' %}
-      <li><a href="{{ spanish_url }}">🇪🇸 Español</a></li>
-    {% else %}
-      <!-- En versión español, link a inglés -->
-      <li><a href="/en{{ page.url }}">🇺🇸 English</a></li>
-    {% endif %}
-  </ul>
   
-  
-
 </nav>
 
 <!-- End Header -->
